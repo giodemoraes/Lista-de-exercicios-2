@@ -1,0 +1,25 @@
+<?php 
+//6. Faça um algoritmo que leia três números e mostre o maior deles.
+
+
+print "digite primeiro numero:";
+$num =fgets (STDIN);
+
+
+print "digite segundo numero:";
+$num2 =fgets (STDIN);
+
+print "digite segundo numero:";
+$num3 =fgets (STDIN);
+
+if($num>$num2 and $num3<$num) {
+    print "Maior numero é $num";
+}
+
+if($num2>$num and $num3<$num2) {
+    print "Maior numero é $num2";
+}
+
+else{
+    print "Maior numero é $num3";
+}
