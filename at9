@@ -1,0 +1,50 @@
+<?php
+//9. Faça um algoritmo que leia três números e mostre-os em ordem decrescente
+
+print "digite o primeiro número:";
+$n1 =(float)fgets (STDIN);
+
+print "digite o segundo número:";
+$n2 =(float)fgets (STDIN);
+
+print "digite o terceiro número:";
+$n3 =(float)fgets (STDIN);
+
+
+if (($n1 > $n2) and ($n1>$n3)){
+    print "$n1 \n";
+ }
+
+ elseif (($n1<$n2) and ($n2>$n3)){
+    print "$n2 \n";
+}
+
+else{
+    print "$n3 \n";
+}
+
+
+if ((($n1<$n2) and ($n1>$n3)) or (($n1>$n2) and ($n1<$n3))){
+    print "$n1 \n";
+}
+
+elseif ((($n2 > $n1) and ($n2<$n3))or(($n2 < $n1) and ($n2>$n3))){
+    print "$n2 \n";
+ }
+
+
+else{
+    print "$n3 \n";
+}
+
+if (($n1<$n2) and ($n1<$n3)){
+    print "$n1 \n";
+}
+
+elseif (($n2 < $n1) and ($n2<$n3)){
+    print "$n2 \n";
+}
+
+else{
+    print "$n3 \n";
+}
