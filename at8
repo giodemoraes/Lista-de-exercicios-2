@@ -1,0 +1,24 @@
+<?php
+//8. Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar,
+//sabendo que a decisão é sempre pelo mais barato. 
+
+print "digite o preço do produto 1:";
+$p1 =(float)fgets (STDIN);
+
+print "digite o preço do produto 2:";
+$p2 =(float)fgets (STDIN);
+
+print "digite o preço do produto 3:";
+$p3 =(float)fgets (STDIN);
+
+if($p1<$p2 and $p3>$p1) {
+    print "Compre o produto 1 por R$:$p1";
+}
+
+if($p2<$p1 and $p2<$p3) {
+    print "Compre o produto 2 por R$:$p2";
+}
+
+else{
+    print "Compre o produto 3 por R$:$p3";
+}
