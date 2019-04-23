@@ -1,0 +1,21 @@
+<?php
+//17. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado
+//ao segundo número. Não utilize a função de potência da linguagem.
+
+
+print "digite a base :";
+$base =(float) fgets (STDIN);
+
+print "digite o expoente :";
+$expoente = (float)fgets (STDIN);
+
+$potencia = 1;
+
+$numbase = $base;
+
+for ($i=1; $i<=$expoente; $i++){ 
+    $potencia=$potencia*$numbase;
+}
+print "Resultado = $potencia\n";
+
+
