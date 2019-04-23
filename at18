@@ -1,0 +1,20 @@
+<?php
+//18. Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a
+//quantidade de números impares.
+
+$numpar=0;
+$numimpar=0;
+$vezes=1;
+do {print "Digite um número: ";
+    $num = (float) fgets(STDIN);
+    
+    if ($num%2==0)
+    {$numpar++;}
+    if ($num%2!=0)
+    {$numimpar++;} 
+    
+ $vezes++;}  
+    
+while($vezes<=10);
+    
+print "Quantidade de números ímpares: $numimpar\nQuantidade de números pares: $numpar \n";
