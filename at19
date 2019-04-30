@@ -1,0 +1,15 @@
+<?php
+
+$n1 = 0;
+$n2 = 1;
+
+print " $n1 ";
+print " $n2 ";
+
+for($fibonacci=0; $fibonacci<=500; $fibonacci++){
+    $fibonacci = $n1 + $n2;
+    $n1 = $n2;
+    $n2 = $fibonacci;
+
+    print"$fibonacci ";
+}
